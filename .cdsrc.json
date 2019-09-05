@@ -1,0 +1,28 @@
+{
+    "build": {
+        "target": ".",
+        "tasks": [
+            {
+                "for": "hana",
+                "src": "db",
+                "options": {
+                    "model": [
+                        "db",
+                        "srv",
+                        "srv"
+                    ]
+                }
+            },
+            {
+                "for": "java-cf",
+                "src": "srv",
+                "options": {
+                    "model": [
+                        "db",
+                        "srv"
+                    ]
+                }
+            }
+        ]
+    }
+}
